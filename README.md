@@ -1,90 +1,60 @@
-# \# 📸 CapturaFotoWebCamCshap
+# 📸 CapturaFotoWebCamCshap
 
-# 
+ Sistema simples desenvolvido em \*\*C# Windows Forms (.NET Framework 4.7.2)\*\* para capturar fotos a partir de uma câmera (webcam) conectada ao computador, com funcionalidade para visualizar a imagem ao vivo, capturar, exibir a foto capturada e salvar no disco.
 
-# Sistema simples desenvolvido em \*\*C# Windows Forms (.NET Framework 4.7.2)\*\* para capturar fotos a partir de uma câmera (webcam) conectada ao computador, com funcionalidade para visualizar a imagem ao vivo, capturar, exibir a foto capturada e salvar no disco.
+# ✅ Útil para aplicações como: emissão de cartões de estudante, crachás, cadastro com foto, controle de acesso e muito mais.
 
-# 
+---
 
-# > ✅ Útil para aplicações como: emissão de cartões de estudante, crachás, cadastro com foto, controle de acesso e muito mais.
+# 🧰 Funcionalidades
 
-# 
+- 📷 Captura de vídeo ao vivo da webcam.
 
-# ---
+- 🖼️ Visualização em tempo real na interface (`PictureBox`).
 
-# 
+- 📌 Captura de imagem da câmera com um clique.
 
-# \## 🧰 Funcionalidades
+- 💾 Salvamento da imagem capturada em disco (formato JPEG).
 
-# 
+- 🗂️ Criação automática da pasta `fotos` para armazenamento.
 
-# \- 📷 Captura de vídeo ao vivo da webcam.
+---
 
-# \- 🖼️ Visualização em tempo real na interface (`PictureBox`).
+# 📁 Estrutura do Projeto
 
-# \- 📌 Captura de imagem da câmera com um clique.
+- `FrmCapturaFoto.cs` – Formulário principal com toda a lógica e interface gráfica.
 
-# \- 💾 Salvamento da imagem capturada em disco (formato JPEG).
+- Nenhuma classe adicional. Projeto enxuto e direto ao ponto.
 
-# \- 🗂️ Criação automática da pasta `fotos` para armazenamento.
+ Pasta `fotos/` (criada automaticamente ao salvar fotos).
 
-# 
+---
 
-# ---
+#  🔧 Requisitos
 
-# 
+- Sistema operacional: Windows 7, 8, 10 ou 11
 
-# \## 📁 Estrutura do Projeto
+- .NET Framework 4.7.2
 
-# 
-
-# \- `FrmCapturaFoto.cs` – Formulário principal com toda a lógica e interface gráfica.
-
-# \- Nenhuma classe adicional. Projeto enxuto e direto ao ponto.
-
-# \- Pasta `fotos/` (criada automaticamente ao salvar fotos).
-
-# 
+- Webcam instalada e funcionando
 
 # ---
 
-# 
 
-# \## 🔧 Requisitos
+# 📦 Dependências
 
-# 
 
-# \- Sistema operacional: Windows 7, 8, 10 ou 11
+O projeto utiliza a biblioteca \*\*\[AForge.NET](http://www.aforgenet.com/framework/)\*\* para acesso à câmera:
 
-# \- .NET Framework 4.7.2
+Você pode instalar via \*\*NuGet\*\* no Visual Studio:
 
-# \- Webcam instalada e funcionando
+  ``powershell ``
 
-# 
+Install-Package AForge
 
-# ---
+Install-Package AForge.Video
 
-# 
-
-# \## 📦 Dependências
-
-# 
-
-# O projeto utiliza a biblioteca \*\*\[AForge.NET](http://www.aforgenet.com/framework/)\*\* para acesso à câmera:
-
-# 
-
-# Você pode instalar via \*\*NuGet\*\* no Visual Studio:
-
-# 
-
-# ```powershell
-
-# Install-Package AForge
-
-# Install-Package AForge.Video
-
-# Install-Package AForge.Video.DirectShow
+Install-Package AForge.Video.DirectShow
 
 
 
